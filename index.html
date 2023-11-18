@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="@@base@@" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, height=device-height, initial-scale=1" />
+    <link rel="stylesheet" href="engine/main.css" />
+    <link rel="stylesheet" href="theme/zurich.css" />
+    <link rel="stylesheet" href="engine/katex/katex.min.css" />
+    <!--<link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />-->
+    <style>
+    :root{
+--logo: ;
+--darkaccent1color: #000;
+--lightaccent1color: #FFF;
+--accent2: #43aa8b;
+--accent3: #f9c74f;
+--accent4: #90be6d;
+--accent5: #f8961e;
+--accent6: #577590;
+--lighttitletextcolor: #FFF;
+--darktitletextcolor: #000;
+--lightbodytextcolor: #FFF;
+--darkbodytextcolor: #000;
+--lightbackgroundcolor: #FFF;
+--darkbackgroundcolor: #000;
+--bodyfont: Helvetica;
+--titlefont: Helvetica;
+} 
+
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="engine/print.css"
+      media="print"
+    />
+  </head>
+
+  <body class="responsive">
+    <div class="reveal">
+      <div class="slides"><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="mÁquinasenmembranas">MÁQUINAS EN MEMBRANAS</h1>
+
+<h4 id="excitabilidadcelularyfenómenoseléctricos">Excitabilidad celular y fenómenos eléctricos</h4></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">1</div></div>
+      
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><video controls="" class=" size-contain position-center-center" data-paused-by-reveal=""><source src="images/scorpion_short.mp4"></video></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">2</div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><video controls="" class=" size-contain position-center-center" data-paused-by-reveal=""><source src="images/Homer_eats_Fugu.mp4"></video></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">3</div></div>
+</section><section class="has-footer light default-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/squid-giant-axon.png" class=" size-contain position-center-center"></div>
+
+<p>Axón gigante 0.5 - 1.5 mm de diámetro</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">4</div></div>
+      
+</section><section class="has-footer light v-split-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Alan_Lloyd_Hodgkin_nobel.jpg" class=" size-contain position-center-center"></div>
+
+<p>Sir Alan Lloyd Hodgkin (1914-1988)</p>
+
+<p>OM KBE FRS </p></div>
+        <div style=""><div class="single-image-wrapper"><img src="images/Giant_Axon_of_Squid_(14356033761).jpg" class=" size-contain position-center-center"></div>
+
+<p>1952 modelo matemático del potencial de acción</p>
+
+<p>2/3 Nobel Prize Physiology or Medicine 1963 (Huxley). </p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">5</div></div>
+</section><section class="has-footer light default-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.578rem;">
+        <div style=""><h2 id="elpotencialdedonnan">El potencial de Donnan</h2>
+
+<p>El potencial de Donnan ocurre cuando hay una membrana permeable a ciertos iones pero no a otros.</p>
+
+<ul>
+<li><strong>Las membranas son semipermeables</strong>: Son barreras que permiten el paso de algunos solutos (como iones pequeños) pero no de otros (como iones grandes o moléculas).</li>
+<li><strong>Equilibrio de Donnan</strong>: Se establece cuando hay una distribución desigual de iones que no pueden cruzar la membrana, lo que lleva a una diferencia de concentración de iones que sí pueden cruzar.</li>
+<li><strong>Potencial de Membrana</strong>: Este _desequilibrio de carga crea un potencial eléctrico a través de la membrana, conocido como el potencial de Donnan.</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">6</div></div>
+      
+</section><section class="has-footer light default-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.672rem;">
+        <div style=""><p>El potencial de Donnan se puede calcular usando la ecuación de Nernst. Para un ion específico, la ecuación es:</p>
+
+<p style="width: 100%;"><span class="math katex-rendered"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>R</mi><mi>T</mi></mrow><mrow><mi>z</mi><mi>F</mi></mrow></mfrac><mi>ln</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mfrac><mrow><mo stretchy="false">[</mo><mi>i</mi><mi>o</mi><mi>n</mi><msub><mo stretchy="false">]</mo><mrow><mi>f</mi><mi>u</mi><mi>e</mi><mi>r</mi><mi>a</mi></mrow></msub></mrow><mrow><mo stretchy="false">[</mo><mi>i</mi><mi>o</mi><mi>n</mi><msub><mo stretchy="false">]</mo><mrow><mi>d</mi><mi>e</mi><mi>n</mi><mi>t</mi><mi>r</mi><mi>o</mi></mrow></msub></mrow></mfrac><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">E = \frac{RT}{zF} \ln\left(\frac{[ion]_{fuera}}{[ion]_{dentro}}\right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0576em;">E</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 2.4em; vertical-align: -0.95em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.3603em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right: 0.044em;">z</span><span class="mord mathnormal" style="margin-right: 0.1389em;">F</span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right: 0.1389em;">RT</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.686em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mop">ln</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top: 0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.427em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mopen">[</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.3361em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">d</span><span class="mord mathnormal mtight">e</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">ro</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mopen">[</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.3361em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right: 0.1076em;">f</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight" style="margin-right: 0.0278em;">er</span><span class="mord mathnormal mtight">a</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.2861em;"><span class=""></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.936em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top: 0em;"><span class="delimsizing size3">)</span></span></span></span></span></span></span></span></p>
+
+<p>donde <span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0576em;">E</span></span></span></span></span> es el potencial de Donnan, <span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0077em;">R</span></span></span></span></span> es la constante de los gases, <span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.1389em;">T</span></span></span></span></span> es la temperatura en Kelvin, <span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4306em;"></span><span class="mord mathnormal" style="margin-right: 0.044em;">z</span></span></span></span></span> es la valencia del ion, <span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.1389em;">F</span></span></span></span></span> es la constante de Faraday, y <span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>i</mi><mi>o</mi><mi>n</mi><msub><mo stretchy="false">]</mo><mrow><mi>f</mi><mi>u</mi><mi>e</mi><mi>r</mi><mi>a</mi></mrow></msub></mrow><annotation encoding="application/x-tex">[ion]_{fuera}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1.0361em; vertical-align: -0.2861em;"></span><span class="mopen">[</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.3361em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right: 0.1076em;">f</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight" style="margin-right: 0.0278em;">er</span><span class="mord mathnormal mtight">a</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.2861em;"><span class=""></span></span></span></span></span></span></span></span></span></span> y <span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>i</mi><mi>o</mi><mi>n</mi><msub><mo stretchy="false">]</mo><mrow><mi>d</mi><mi>e</mi><mi>n</mi><mi>t</mi><mi>r</mi><mi>o</mi></mrow></msub></mrow><annotation encoding="application/x-tex">[ion]_{dentro}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mclose"><span class="mclose">]</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.3361em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">d</span><span class="mord mathnormal mtight">e</span><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">ro</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span> son las concentraciones del ion fuera y dentro de la célula, respectivamente.</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">7</div></div>
+      
+</section><section class="has-footer light caption-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-caption media-grid" style="width: 100%; font-size: 0.438rem;">
+        <img src="images/medida-Potendial-membrana.jpg" class=" size-contain position-center-center" style="">
+        <div style=""><p>La célula mantiene un potencial electrostático permanente (de reposo) a través de su membrana. <br> Es una característica de sus estado de equilibrio, un <strong>estado de energía libre mínima.</strong></p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">8</div></div>
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="elpotencialdedonnanesunaformaatractivadeexplicarlospotencialesdereposodelasmembranas.brperosepresentanproblemas.">El <strong>potencial de Donnan</strong> es una forma atractiva de explicar los potenciales de reposo de las membranas. <br> Pero se presentan problemas.</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">9</div></div>
+      
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="laconcentraciónmayordeionesdentrodelacélulaproduciríaunapresiónosmóticamuysuperioralaquelacélulapuedesoportar.">la concentración mayor de iones dentro de la célula produciría una presión osmótica muy superior a la que la célula puede soportar.</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">10</div></div>
+      
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="laconcentracióndecl-enelinteriordelacéluladeberíasermenorqueenelexterioralcontrariodeloquepasaconloscationeskynademodoquedeltav0.">la concentración de Cl<sup>-</sup> en el interior de la célula debería ser menor que en el exterior, al contrario de lo que pasa con los cationes K<sup>+</sup> y Na<sup>+</sup> de modo que ΔV &lt; 0.</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">11</div></div>
+      
+</section><section class="has-footer light title-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="height: 100%; width: 100%; font-size: 0.25rem;">
+        <div><h2 id="concentracionesiónicasaproximadasenelinterioryelexteriordelaxóngigantedelcalamar.brlasegundalíneailustralaanomalíadelsodio.">Concentraciones iónicas aproximadas en el interior y el exterior del axón gigante del calamar. <br> La segunda línea ilustra la anomalía del sodio.</h2>
+
+<h2 id=""></h2>
+
+<table>
+<colgroup>
+<col>
+<col style="text-align:right;">
+<col style="text-align:right;">
+</colgroup>
+
+<thead>
+<tr>
+	<th>Ion</th>
+	<th style="text-align:right;"><span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">c_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.5806em; vertical-align: -0.15em;"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.3011em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span></th>
+	<th style="text-align:right;"><span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">c_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.5806em; vertical-align: -0.15em;"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.3011em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td>K<sup>+</sup></td>
+	<td style="text-align:right;">400</td>
+	<td style="text-align:right;">20</td>
+</tr>
+<tr>
+	<td><strong>Na<sup>+</sup></strong></td>
+	<td style="text-align:right;"><strong>50</strong></td>
+	<td style="text-align:right;"><strong>440</strong></td>
+</tr>
+<tr>
+	<td>Cl<sup>-</sup></td>
+	<td style="text-align:right;">52</td>
+	<td style="text-align:right;">560</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">12</div></div>
+      
+</section><section class="has-footer light section-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <hgroup><p class="kicker">La anomalía del Na<sup>+</sup> junto con la presión osmótica nos lleva a concluir que </p>
+
+<h3 id="losionesenlascélulasvivasnoestánenequilibrio.">los iones en las células vivas no están en equilibrio.</h3></hgroup>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">13</div></div>
+</section><section class="has-footer light section-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id=""></h3>
+
+<p><span style="color: blue;">¿Cómo puede solucionar la célula este problema doble: <br>- mantener una presión osmótica saludable<br> - una concentración de Na<sup>+</sup> que no corresponde al equilibrio?</span></p>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">14</div></div>
+</section><section class="has-footer light title-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="lasacuaporinassonimpermeablesaiones">Las acuaporinas son impermeables a iones</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">15</div></div>
+      
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><video controls="" class=" size-contain position-center-center" data-paused-by-reveal=""><source src="images/aquaporin_video.mp4"></video></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">16</div></div>
+</section><section class="has-footer light grid-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 media-grid" style="width: 100%; font-size: 0.719rem;">
+        <img src="images/waters-small.gif" class=" size-contain position-center-center" style=""><div style=""><h3 id=""></h3>
+
+<p>Water molecules passing the channel are forced, by the protein's electrostatic forces, to flip at the center of the channel (see the animation), thereby breaking the alternative donor-acceptor arrangement that is necessary for proton translocation</p>
+
+<h3 id=""></h3></div><div style=""><p>Figura obtenida de la web del <a href="https://www.ks.uiuc.edu/Research/aquaporins/">Theoretical and Computational Biophysics Group</a></p>
+
+<p><a href="https://www.ks.uiuc.edu/Training/CaseStudies/pdfs/aqp.pdf">Case Study: Aquaporins. Yi Wang <em>et al.</em> 2012</a></p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">17</div></div>
+</section><section class="has-footer light title-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="loscanalesdeionessonselectivosyfluctúanentrelasconformacionesabiertaycerrada">Los canales de iones son selectivos y fluctúan entre las conformaciones abierta y cerrada</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">18</div></div>
+      
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/canales_ionicos.png" class=" size-contain position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">19</div></div>
+</section><section class="has-footer light grid-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-3 media-grid" style="width: 100%; font-size: 1rem;">
+        <video controls="" class=" size-contain position-center-center" style="" data-paused-by-reveal=""><source src="images/potassium_channel.mov"></video><img src="images/k_channel-nobel.png" class=" size-contain position-center-center" style=""><div style=""><h3 id="bacterialkchannel.intheselectivityfilterpotassiumionsarecoordinatedbyoxygenatomsblackintheproteinbackbone."><a href="https://www.nobelprize.org/prizes/chemistry/2003/press-release/">Bacterial K<sup>+</sup> channel.</a> In the selectivity filter, potassium ions are coordinated by oxygen atoms (black) in the protein backbone.</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">20</div></div>
+</section><section class="has-footer light caption-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-caption media-grid" style="width: 100%; font-size: 0.438rem;">
+        <img src="images/NobelPrize-Chemistry-2003.png" class=" size-contain position-center-center" style="">
+        <div style=""><p>The <a href="https://www.nobelprize.org/prizes/chemistry/2003/popular-information/">Nobel Prize in Chemistry 2003</a> was awarded "for discoveries concerning channels in cell membranes" jointly with one half to Peter Agre "for the discovery of water channels" and with one half to Roderick MacKinnon "for structural and mechanistic studies of ion channels"</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">21</div></div>
+</section><section class="has-footer light default-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.438rem;">
+        <div style=""><h3 id="movimientodeionesatravésdelamembrana.conductanciaóhmica">Movimiento de iones a través de la membrana. Conductancia óhmica</h3>
+
+<p>Cada ión se mueve a favor de su gradiente de concentración. </p>
+
+<p>Conductancia de la membrana</p>
+
+<p style="width: 100%;"><span class="math katex-rendered"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>I</mi><mo>=</mo><mi>G</mi><mo>×</mo><mo stretchy="false">(</mo><mi>V</mi><mo>−</mo><mi>E</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">I = G \times (V - E)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0785em;">I</span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 0.7667em; vertical-align: -0.0833em;"></span><span class="mord mathnormal">G</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right: 0.2222em;">V</span><span class="mspace" style="margin-right: 0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right: 0.2222em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.0576em;">E</span><span class="mclose">)</span></span></span></span></span></span></p>
+
+<p>Donde:</p>
+
+<ul>
+<li><span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0785em;">I</span></span></span></span></span> es la corriente iónica (el flujo de iones).</li>
+<li><span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal">G</span></span></span></span></span> es la conductancia (la facilidad de paso de los iones).</li>
+<li><span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.2222em;">V</span></span></span></span></span> es el potencial de membrana (la diferencia de voltaje a través de la membrana).</li>
+<li><p><span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0576em;">E</span></span></span></span></span> es el potencial de equilibrio para un ion específico (como lo describe el potencial de Nernst).</p>
+Así, el movimiento natural de cada ión viene determinado por la diferencia entre el potencial de membrana y su <strong>potencial de Nernst.</strong></li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">22</div></div>
+      
+</section><section class="has-footer light section-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 0.625rem;">
+        <div style="">
+          <h3 id="potencialdenernst">Potencial de Nernst</h3>
+
+<p>Es el potencial de equilibrio para ese ion particular, calculado en base a la diferencia de concentración del ion a ambos lados de la membrana.</p>
+
+<p style="width: 100%;"><span class="math katex-rendered"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>E</mi><mtext>ion</mtext></msub><mo>=</mo><mfrac><mrow><mi>R</mi><mi>T</mi></mrow><mrow><mi>z</mi><mi>F</mi></mrow></mfrac><mi>ln</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mfrac><msub><mi>c</mi><mn>1</mn></msub><msub><mi>c</mi><mn>2</mn></msub></mfrac><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">E_{\text{ion}} = \frac{RT}{zF} \ln\left(\frac{c_1}{c_2}\right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.8333em; vertical-align: -0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right: 0.0576em;">E</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.3175em;"><span class="" style="top: -2.55em; margin-left: -0.0576em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">ion</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span class="mspace" style="margin-right: 0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.2778em;"></span></span><span class="base"><span class="strut" style="height: 2.4em; vertical-align: -0.95em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.3603em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right: 0.044em;">z</span><span class="mord mathnormal" style="margin-right: 0.1389em;">F</span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right: 0.1389em;">RT</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.686em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="mop">ln</span><span class="mspace" style="margin-right: 0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top: 0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 1.1076em;"><span class="" style="top: -2.314em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.3011em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span><span class="" style="top: -3.23em;"><span class="pstrut" style="height: 3em;"></span><span class="frac-line" style="border-bottom-width: 0.04em;"></span></span><span class="" style="top: -3.677em;"><span class="pstrut" style="height: 3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.3011em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.836em;"><span class=""></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose delimcenter" style="top: 0em;"><span class="delimsizing size3">)</span></span></span></span></span></span></span></span></p>
+
+<p>Donde <span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">c_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.5806em; vertical-align: -0.15em;"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.3011em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span> y <span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">c_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.5806em; vertical-align: -0.15em;"></span><span class="mord"><span class="mord mathnormal">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height: 0.3011em;"><span class="" style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height: 0.15em;"><span class=""></span></span></span></span></span></span></span></span></span></span> son las concentraciones del ion fuera y dentro de la célula, respectivamente, <span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.0077em;">R</span></span></span></span></span> es la constante de gas, <span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.1389em;">T</span></span></span></span></span> es la temperatura, <span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.4306em;"></span><span class="mord mathnormal" style="margin-right: 0.044em;">z</span></span></span></span></span> es la valencia del ion, y <span class="math katex-rendered"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.1389em;">F</span></span></span></span></span> es la constante de Faraday.</p>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">23</div></div>
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="elpotencialdemembranaeselpotencialeléctricorealatravésdelamembranacelular">El potencial de membrana es el potencial eléctrico real a través de la membrana celular</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">24</div></div>
+      
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="unaespeciedepromediodelospotencialesdenernstdelosionesponderadoporlaconductanciadelamembranaacadaion.">una especie de promedio de los potenciales de Nernst de los iones, ponderado por la conductancia de la membrana a cada ion.</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">25</div></div>
+      
+</section><section class="has-footer light cover-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="unafuerzaimpulsoradelflujodeionesderivadeladiferenciaentreelpotencialdemembranayelpotencialdenernstdeunionespecífico">Una "fuerza impulsora" del flujo de iones deriva de la diferencia entre el potencial de membrana y el potencial de Nernst de un ion específico</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">26</div></div>
+      
+</section><section class="has-footer light default-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.813rem;">
+        <div style=""><h3 id=""></h3>
+
+<ul>
+<li>Si el <strong>potencial de membrana es más positivo que el potencial de Nernst</strong> del ion, la fuerza impulsora mueve el ion hacia adentro de la célula (catión) o hacia afuera (anión).</li>
+<li>Si el <strong>potencial de membrana es más negativo que el potencial de Nernst</strong> del ion, la fuerza impulsora mueve el ion en la dirección opuesta.</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">27</div></div>
+      
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Na_wants_in.jpg" class=" size-contain position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">28</div></div>
+</section><section class="has-footer light title-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="elbombeodenamantienelospotencialesdemembranayevitagrandespresionesosmóticas">El bombeo de Na<sup>+</sup> mantiene los potenciales de membrana y evita grandes presiones osmóticas</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">29</div></div>
+      
+</section><section class="has-footer light default-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/IMG_1042.jpg" class=" size-contain position-center-center"></div>
+
+<p>Flujo de iones Na<sup>+</sup> hacia el exterior de un axón de sepia tras un estímulo eléctrico.</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">30</div></div>
+      
+</section><section class="has-footer light default-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.859rem;">
+        <div style=""><blockquote class="is-single-quote"><div class="line"></div>
+<p>Una máquina molecular específica insertada en la membrana hidroliza ATP y utiliza parte de la energía libre resultante para bombear iones sodio al exterior de la célula. Al mismo tiempo, la bomba hace entrar potasio, contrarrestando parcialmente la pérdida de carga eléctrica del sodio expulsado.</p>
+<div class="line"></div></blockquote></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">31</div></div>
+      
+</section><section class="has-footnotes has-footer light default-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.859rem;">
+        <div style=""><blockquote class="is-single-quote"><div class="line"></div>
+<p>The ATPase was prepared by homogenization and subsequent differential centrifugation of leg nerves from the shore crab (Carcinus maenas). The isolated nerves were washed and homogenized...</p>
+
+<p><sup><a href="#fn1" id="fnr1" title="see footnote" class="footnote">1</a></sup> </p>
+<div class="line"></div></blockquote></div>
+      </div>
+      <div class="footnotes">
+<ol>
+
+<li id="fn1">
+<p>Skou, J. C. (1956). <a href="https://doi.org/10.1016/0006-3002(57)90343-8">The influence of some cations on an adenosine triphosphatase from peripheral nerves.</a> Biochimica et Biophysica Acta, 23, 394-401. <a href="#fnr1" title="return to article" class="reversefootnote">↩︎</a></p>
+</li>
+
+</ol>
+</div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">32</div></div>
+      
+</section><section class="has-footer light default-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/skou_Na-K.png" class=" size-contain position-center-center"></div>
+
+<p>The maximum activity obtained in the presence of potassium increases with the sodium concentration</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">33</div></div>
+      
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Screenshot%202023-11-17%20at%2016.00.22.png" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">34</div></div>
+</section><section class="has-footer light default-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><video controls="" class=" position-center-center" data-paused-by-reveal=""><source src="images/trimmed_potassium-pump.mp4"></video></div>
+
+<h1 id="bombadenak">Bomba de Na<sup>+</sup> K<sup>+</sup></h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">35</div></div>
+      
+</section><section class="has-footer light grid-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-grid grid-items-0" style="width: 100%; font-size: 1rem;">
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">36</div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><video controls="" class=" position-center-center" data-paused-by-reveal=""><source src="images/Neuron_action_potential.mp4"></video></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">37</div></div>
+</section><section class="has-footer light full-image-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><video controls="" class=" position-center-center" data-paused-by-reveal=""><source src="images/mimo.mov"></video></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">38</div></div>
+</section><section class="has-footer light v-split-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <img src="images/scorpion_frame.png" class=" position-center-center" style="">
+        <img src="images/homer_waits_death.png" class=" position-center-center" style="">
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">39</div></div>
+</section><section class="has-footer light v-split-container present has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <img src="images/kchannel_charybdotoxin-3.png" class=" position-center-center" style="">
+        <div style=""><div class="single-image-wrapper"><img src="images/kchannel_charybdotoxin-4.png" class=" position-center-center"></div>
+
+<h3 id="charybdotoxinoccludestheporeofkchannels">Charybdotoxin occludes the pore of K<sup>+</sup> channels</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">40</div></div>
+</section><section class="has-footer light default-container present fit-warning has-light-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.719rem;">
+        <div style=""><h3 id="bibliografía">Bibliografía</h3>
+
+<ul>
+<li>Philip Nelson. Física Biológica. Energía, información, vida. Ed. Reverté. Capítulo 11 pg. 505 y ss.</li>
+<li>Bruce Alberts <em>et al</em>. Molecular Biology of the Cell 6th edition. Chapter 11. Membrane Transport of Small Molecules and the Electrical Properties of Membranes.</li>
+<li>Albert Lehninger. Principles of Biochemistry 6th edition. Chapter 12 Biosignalling</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing">41</div></div>
+      
+</section></div>
+    </div>
+    <script src="engine/index.js"></script>
+    <!--<script src="engine/d3v4.min.js" charset="utf-8"></script>
+    <script src="engine/charts.min.js" charset="utf-8"></script>
+    <script src="engine/billboard.min.js"></script>-->
+    <script src="engine/pptxgen.min.js"></script>
+                                                   <script src="engine/pfill.js"></script>
+    <script src="engine/published.js"></script>
+
+    <script>
+      Reveal.configure({
+        progress: true,
+        keyboard: true,
+        dependencies: [
+          {
+            src: "engine/highlight.js",
+            sync: true,
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
